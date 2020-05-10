@@ -1,0 +1,56 @@
+ПСЕВДОКЛАССЫ:
+
+1) Для div: Добавляем в CSS в класс элемента transition: 0.2s;
+И псевдоэлемент .box:hover {background-color: black;} /* hover - эффект при наведении */
+
+2) Для ссылки a: 
+Добавляем в CSS в класс элемента 
+transition: 0.2s;
+text-ecoration: none;
+И псевдоэлемент .box:hover {text-decoration: underline;}
+Чтобы ссылка во время ажатия была зеленой - 
+.box:active {color: green;}
+Чтобы ссылка после нажатия была желтой: 
+.box:visited {color: green;}
+
+3) Для input:
+Во время нажатия на input - без обводки и с рамкой, тенью
+input:focus {  /* focus - когда нажали на элемент и фокус держдится на нем */
+outline: none;
+border: 1px solid green
+box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+}
+
+ПСЕВДОЭЛЕМЕНТЫ: 
+
+1) Для ссылки:
+a {
+display: inline-block;
+text-decoration: none;
+}
+a::before {
+content: '1';/* before - добавление инфы перед элементом, если элемент after - после элемента */
+------------------------------------------------------------------------------------------------------------------
+a {
+display: block;
+width: 80px;
+text-align: center;
+text-decoration: none;
+}
+a::before {
+content: ;
+display: block;
+width: 100%;
+height: 1px;
+transform: scaleX(0);
+background-color: red;
+transition: all 0.2s;
+}
+a:hover::before {
+transform: scaleX(1);
+}
+
+Этот код позволяет делать медленное подчеркивание ссылки сверху красной линией. 
+
+
+
