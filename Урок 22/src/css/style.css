@@ -1,0 +1,36 @@
+.map-contacts {
+	position: absolute;
+	text-align: center;
+	margin-top: -430px;
+	padding: 60px 70px;
+	height: 430px;
+	background-color: #c60b0b;
+	color: #fff;
+}
+
+.section-header {
+	font-size: 30px;
+}
+
+.fin-contacts {
+	margin-top: 20px;
+}
+.fin-contacts-logo-header {
+	font-size: 16px;
+}
+
+.email {
+	color: white;
+	text-decoration: underline;
+}
+
+.sertification {
+	text-align: center;
+	padding-top: 15px;
+	font-size: 14px;
+	color: #666666;
+}
+
+.address {
+	text-align: right;
+}
